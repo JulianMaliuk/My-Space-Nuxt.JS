@@ -12,7 +12,7 @@
     "lint": "yarn lint:js",
     "test": "jest",
     "pm2:start": "pm2 start npm --name $npm_package_process_name --watch -- start",
-    "pm2:restart": "pm2 restart ",
+    "pm2:restart": "pm2 restart $npm_package_process_name",
     "pm2:delete": "pm2 delete $npm_package_process_name"
   },
   "dependencies": {
