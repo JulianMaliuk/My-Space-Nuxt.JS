@@ -1,5 +1,7 @@
 # Notes-Nuxt
 
+## [Demo](https://my-space.julian.pp.ua/)
+
 ## Build Setup
 
 ```bash
