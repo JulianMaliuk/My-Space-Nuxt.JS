@@ -2,6 +2,7 @@
   "name": "my-space",
   "version": "1.0.0",
   "private": true,
+  "process_name": "my-space-ui",
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
@@ -9,7 +10,10 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "test": "jest"
+    "test": "jest",
+    "pm2:start": "pm2 start npm --name $npm_package_process_name --watch -- start",
+    "pm2:restart": "pm2 restart ",
+    "pm2:delete": "pm2 delete $npm_package_process_name"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.1",
