@@ -11,7 +11,7 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "test": "jest",
-    "pm2:start": "pm2 start npm --name $npm_package_process_name --watch -- start",
+    "pm2:start": "pm2 start npm --name $npm_package_process_name -- start",
     "pm2:restart": "pm2 restart $npm_package_process_name",
     "pm2:delete": "pm2 delete $npm_package_process_name"
   },
@@ -29,6 +29,7 @@
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/vuetify": "^1.11.3",
     "@vue/test-utils": "^1.1.2",
     "babel-core": "7.0.0-bridge.0",
